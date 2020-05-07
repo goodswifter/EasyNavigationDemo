@@ -1,0 +1,14 @@
+//
+//  EasyNavPrefixHeader.pch
+//  EasyNavigationDemo
+//
+//  Created by zhongaidong on 2020/5/7.
+//  Copyright © 2020 jingshonline. All rights reserved.
+//
+
+#ifndef EasyNavPrefixHeader_pch
+#define EasyNavPrefixHeader_pch
+
+#import <EasyNavigation/EasyNavigation.h>
+
+#endif /* EasyNavPrefixHeader_pch */

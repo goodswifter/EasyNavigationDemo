@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ADStatusBarVC">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fNv-MP-a1o">
+                    <rect key="frame" x="10" y="348" width="394" height="200"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="statusBar是否隐藏" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5w1-3A-OV7">
+                            <rect key="frame" x="60" y="47" width="143" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3cj-vM-GJW">
+                            <rect key="frame" x="220" y="42" width="51" height="31"/>
+                            <connections>
+                                <action selector="statusBarSwitchClick:" destination="-1" eventType="valueChanged" id="YUQ-l7-mxs"/>
+                            </connections>
+                        </switch>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="statusBar改变样式" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dya-BF-k8P">
+                            <rect key="frame" x="60" y="103" width="157" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KDJ-QH-lkB">
+                            <rect key="frame" x="220" y="98" width="51" height="31"/>
+                            <connections>
+                                <action selector="statusBarStyleSwitchClick:" destination="-1" eventType="valueChanged" id="pLq-LK-ImY"/>
+                            </connections>
+                        </switch>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="dya-BF-k8P" firstAttribute="centerY" secondItem="KDJ-QH-lkB" secondAttribute="centerY" id="13K-pt-QAr"/>
+                        <constraint firstItem="KDJ-QH-lkB" firstAttribute="leading" secondItem="dya-BF-k8P" secondAttribute="trailing" constant="3" id="2rn-lH-6qp"/>
+                        <constraint firstAttribute="height" constant="200" id="Y2Z-uE-i7N"/>
+                        <constraint firstItem="3cj-vM-GJW" firstAttribute="leading" secondItem="KDJ-QH-lkB" secondAttribute="leading" id="fof-05-aXu"/>
+                        <constraint firstItem="KDJ-QH-lkB" firstAttribute="top" secondItem="3cj-vM-GJW" secondAttribute="bottom" constant="25" id="gl8-Db-4QK"/>
+                        <constraint firstItem="3cj-vM-GJW" firstAttribute="top" secondItem="fNv-MP-a1o" secondAttribute="top" constant="42" id="hsC-dM-luZ"/>
+                        <constraint firstItem="3cj-vM-GJW" firstAttribute="leading" secondItem="5w1-3A-OV7" secondAttribute="trailing" constant="17" id="joZ-HE-pvh"/>
+                        <constraint firstItem="5w1-3A-OV7" firstAttribute="centerY" secondItem="3cj-vM-GJW" secondAttribute="centerY" id="oK0-Sb-z2B"/>
+                        <constraint firstItem="5w1-3A-OV7" firstAttribute="leading" secondItem="dya-BF-k8P" secondAttribute="leading" id="qdo-MJ-6ly"/>
+                        <constraint firstItem="5w1-3A-OV7" firstAttribute="leading" secondItem="fNv-MP-a1o" secondAttribute="leading" constant="60" id="uQT-u2-5rP"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="fNv-MP-a1o" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="9Yr-ru-9hi"/>
+                <constraint firstItem="fNv-MP-a1o" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="10" id="bRt-oB-xOQ"/>
+                <constraint firstItem="fNv-MP-a1o" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="nYb-8o-51V"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="139" y="113"/>
+        </view>
+    </objects>
+</document>

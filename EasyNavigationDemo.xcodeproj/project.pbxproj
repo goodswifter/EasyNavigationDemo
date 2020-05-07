@@ -1,0 +1,571 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1283C24124639E21002041CA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1283C24024639E21002041CA /* AppDelegate.m */; };
+		1283C24724639E21002041CA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1283C24624639E21002041CA /* ViewController.m */; };
+		1283C24A24639E21002041CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1283C24824639E21002041CA /* Main.storyboard */; };
+		1283C24C24639E25002041CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1283C24B24639E25002041CA /* Assets.xcassets */; };
+		1283C24F24639E25002041CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1283C24D24639E25002041CA /* LaunchScreen.storyboard */; };
+		1283C25224639E25002041CA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1283C25124639E25002041CA /* main.m */; };
+		1283C25A2463A7F7002041CA /* ADBaseTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1283C2592463A7F7002041CA /* ADBaseTVC.m */; };
+		1283C25F2463A8A5002041CA /* ADNavOperateTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1283C25E2463A8A5002041CA /* ADNavOperateTVC.m */; };
+		1283C2622463A8E6002041CA /* ADNavTransparentTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1283C2612463A8E6002041CA /* ADNavTransparentTVC.m */; };
+		1283C2652463A91A002041CA /* ADNavAlphaChangeTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1283C2642463A91A002041CA /* ADNavAlphaChangeTVC.m */; };
+		1283C2682463A94D002041CA /* ADNavEmptyTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1283C2672463A94D002041CA /* ADNavEmptyTVC.m */; };
+		1283C26B2463A97D002041CA /* ADNavScrollHiddenTVC01.m in Sources */ = {isa = PBXBuildFile; fileRef = 1283C26A2463A97D002041CA /* ADNavScrollHiddenTVC01.m */; };
+		1283C2732463ADAB002041CA /* ADNavScrollHiddenTVC02.m in Sources */ = {isa = PBXBuildFile; fileRef = 1283C2722463ADAB002041CA /* ADNavScrollHiddenTVC02.m */; };
+		1283C2762463ADE4002041CA /* ADNavScrollAnimateHiddenTVC01.m in Sources */ = {isa = PBXBuildFile; fileRef = 1283C2752463ADE4002041CA /* ADNavScrollAnimateHiddenTVC01.m */; };
+		1283C2792463ADEF002041CA /* ADNavScrollAnimateHiddenTVC02.m in Sources */ = {isa = PBXBuildFile; fileRef = 1283C2782463ADEF002041CA /* ADNavScrollAnimateHiddenTVC02.m */; };
+		1283C27C2463AECA002041CA /* ADBaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1283C27B2463AECA002041CA /* ADBaseVC.m */; };
+		1283C27F2463AF14002041CA /* ADNavNestScrollViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1283C27E2463AF14002041CA /* ADNavNestScrollViewVC.m */; };
+		1283C2832463AF52002041CA /* ADCustomSlideBackVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1283C2812463AF52002041CA /* ADCustomSlideBackVC.m */; };
+		1283C2842463AF52002041CA /* ADCustomSlideBackVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1283C2822463AF52002041CA /* ADCustomSlideBackVC.xib */; };
+		1283C2882463AF90002041CA /* ADSystemSlideBackVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1283C2862463AF90002041CA /* ADSystemSlideBackVC.m */; };
+		1283C2892463AF90002041CA /* ADSystemSlideBackVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1283C2872463AF90002041CA /* ADSystemSlideBackVC.xib */; };
+		1283C28D2463AFE5002041CA /* ADStatusBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1283C28B2463AFE5002041CA /* ADStatusBarVC.m */; };
+		1283C28E2463AFE5002041CA /* ADStatusBarVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1283C28C2463AFE5002041CA /* ADStatusBarVC.xib */; };
+		1283C296246414EB002041CA /* NavStatusBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1283C293246414EA002041CA /* NavStatusBarViewController.xib */; };
+		1283C297246414EB002041CA /* NavStatusBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1283C295246414EB002041CA /* NavStatusBarViewController.m */; };
+		22124B127A0A0958EFABCA0F /* Pods_EasyNavigationDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99C44FA1DCA0B5F1985F0D66 /* Pods_EasyNavigationDemo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1283C23C24639E21002041CA /* EasyNavigationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyNavigationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1283C23F24639E21002041CA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1283C24024639E21002041CA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1283C24524639E21002041CA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1283C24624639E21002041CA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1283C24924639E21002041CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1283C24B24639E25002041CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1283C24E24639E25002041CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1283C25024639E25002041CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1283C25124639E25002041CA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1283C2582463A7F7002041CA /* ADBaseTVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADBaseTVC.h; sourceTree = "<group>"; };
+		1283C2592463A7F7002041CA /* ADBaseTVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADBaseTVC.m; sourceTree = "<group>"; };
+		1283C25D2463A8A5002041CA /* ADNavOperateTVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADNavOperateTVC.h; sourceTree = "<group>"; };
+		1283C25E2463A8A5002041CA /* ADNavOperateTVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADNavOperateTVC.m; sourceTree = "<group>"; };
+		1283C2602463A8E6002041CA /* ADNavTransparentTVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADNavTransparentTVC.h; sourceTree = "<group>"; };
+		1283C2612463A8E6002041CA /* ADNavTransparentTVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADNavTransparentTVC.m; sourceTree = "<group>"; };
+		1283C2632463A91A002041CA /* ADNavAlphaChangeTVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADNavAlphaChangeTVC.h; sourceTree = "<group>"; };
+		1283C2642463A91A002041CA /* ADNavAlphaChangeTVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADNavAlphaChangeTVC.m; sourceTree = "<group>"; };
+		1283C2662463A94D002041CA /* ADNavEmptyTVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADNavEmptyTVC.h; sourceTree = "<group>"; };
+		1283C2672463A94D002041CA /* ADNavEmptyTVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADNavEmptyTVC.m; sourceTree = "<group>"; };
+		1283C2692463A97D002041CA /* ADNavScrollHiddenTVC01.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADNavScrollHiddenTVC01.h; sourceTree = "<group>"; };
+		1283C26A2463A97D002041CA /* ADNavScrollHiddenTVC01.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADNavScrollHiddenTVC01.m; sourceTree = "<group>"; };
+		1283C2712463ADAB002041CA /* ADNavScrollHiddenTVC02.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADNavScrollHiddenTVC02.h; sourceTree = "<group>"; };
+		1283C2722463ADAB002041CA /* ADNavScrollHiddenTVC02.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADNavScrollHiddenTVC02.m; sourceTree = "<group>"; };
+		1283C2742463ADE4002041CA /* ADNavScrollAnimateHiddenTVC01.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADNavScrollAnimateHiddenTVC01.h; sourceTree = "<group>"; };
+		1283C2752463ADE4002041CA /* ADNavScrollAnimateHiddenTVC01.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADNavScrollAnimateHiddenTVC01.m; sourceTree = "<group>"; };
+		1283C2772463ADEF002041CA /* ADNavScrollAnimateHiddenTVC02.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADNavScrollAnimateHiddenTVC02.h; sourceTree = "<group>"; };
+		1283C2782463ADEF002041CA /* ADNavScrollAnimateHiddenTVC02.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADNavScrollAnimateHiddenTVC02.m; sourceTree = "<group>"; };
+		1283C27A2463AECA002041CA /* ADBaseVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADBaseVC.h; sourceTree = "<group>"; };
+		1283C27B2463AECA002041CA /* ADBaseVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADBaseVC.m; sourceTree = "<group>"; };
+		1283C27D2463AF14002041CA /* ADNavNestScrollViewVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADNavNestScrollViewVC.h; sourceTree = "<group>"; };
+		1283C27E2463AF14002041CA /* ADNavNestScrollViewVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADNavNestScrollViewVC.m; sourceTree = "<group>"; };
+		1283C2802463AF52002041CA /* ADCustomSlideBackVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADCustomSlideBackVC.h; sourceTree = "<group>"; };
+		1283C2812463AF52002041CA /* ADCustomSlideBackVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADCustomSlideBackVC.m; sourceTree = "<group>"; };
+		1283C2822463AF52002041CA /* ADCustomSlideBackVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ADCustomSlideBackVC.xib; sourceTree = "<group>"; };
+		1283C2852463AF90002041CA /* ADSystemSlideBackVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADSystemSlideBackVC.h; sourceTree = "<group>"; };
+		1283C2862463AF90002041CA /* ADSystemSlideBackVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADSystemSlideBackVC.m; sourceTree = "<group>"; };
+		1283C2872463AF90002041CA /* ADSystemSlideBackVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ADSystemSlideBackVC.xib; sourceTree = "<group>"; };
+		1283C28A2463AFE5002041CA /* ADStatusBarVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADStatusBarVC.h; sourceTree = "<group>"; };
+		1283C28B2463AFE5002041CA /* ADStatusBarVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADStatusBarVC.m; sourceTree = "<group>"; };
+		1283C28C2463AFE5002041CA /* ADStatusBarVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ADStatusBarVC.xib; sourceTree = "<group>"; };
+		1283C28F2463E06A002041CA /* EasyNavPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EasyNavPrefixHeader.pch; sourceTree = "<group>"; };
+		1283C293246414EA002041CA /* NavStatusBarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NavStatusBarViewController.xib; sourceTree = "<group>"; };
+		1283C294246414EA002041CA /* NavStatusBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavStatusBarViewController.h; sourceTree = "<group>"; };
+		1283C295246414EB002041CA /* NavStatusBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavStatusBarViewController.m; sourceTree = "<group>"; };
+		32DD31874F5AD22EA109D910 /* Pods-EasyNavigationDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyNavigationDemo.release.xcconfig"; path = "Target Support Files/Pods-EasyNavigationDemo/Pods-EasyNavigationDemo.release.xcconfig"; sourceTree = "<group>"; };
+		99C44FA1DCA0B5F1985F0D66 /* Pods_EasyNavigationDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyNavigationDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA449A62D39B163F21D9D779 /* Pods-EasyNavigationDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyNavigationDemo.debug.xcconfig"; path = "Target Support Files/Pods-EasyNavigationDemo/Pods-EasyNavigationDemo.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1283C23924639E21002041CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22124B127A0A0958EFABCA0F /* Pods_EasyNavigationDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1283C23324639E21002041CA = {
+			isa = PBXGroup;
+			children = (
+				1283C23E24639E21002041CA /* EasyNavigationDemo */,
+				1283C23D24639E21002041CA /* Products */,
+				2F457D2654FA51FAFE84FB36 /* Pods */,
+				890C4601A569AE4433480EC8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1283C23D24639E21002041CA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1283C23C24639E21002041CA /* EasyNavigationDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1283C23E24639E21002041CA /* EasyNavigationDemo */ = {
+			isa = PBXGroup;
+			children = (
+				1283C25B2463A845002041CA /* Classes */,
+				1283C23F24639E21002041CA /* AppDelegate.h */,
+				1283C24024639E21002041CA /* AppDelegate.m */,
+				1283C24524639E21002041CA /* ViewController.h */,
+				1283C24624639E21002041CA /* ViewController.m */,
+				1283C24824639E21002041CA /* Main.storyboard */,
+				1283C24B24639E25002041CA /* Assets.xcassets */,
+				1283C24D24639E25002041CA /* LaunchScreen.storyboard */,
+				1283C25024639E25002041CA /* Info.plist */,
+				1283C25124639E25002041CA /* main.m */,
+				1283C28F2463E06A002041CA /* EasyNavPrefixHeader.pch */,
+			);
+			path = EasyNavigationDemo;
+			sourceTree = "<group>";
+		};
+		1283C25B2463A845002041CA /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1283C26C2463AA69002041CA /* Operate */,
+				1283C2702463ACB5002041CA /* Alpha */,
+				1283C26F2463AC53002041CA /* Hidden */,
+				1283C26E2463AA97002041CA /* SlideBack */,
+				1283C26D2463AA75002041CA /* StatusBar */,
+				1283C2582463A7F7002041CA /* ADBaseTVC.h */,
+				1283C2592463A7F7002041CA /* ADBaseTVC.m */,
+				1283C27A2463AECA002041CA /* ADBaseVC.h */,
+				1283C27B2463AECA002041CA /* ADBaseVC.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		1283C26C2463AA69002041CA /* Operate */ = {
+			isa = PBXGroup;
+			children = (
+				1283C25D2463A8A5002041CA /* ADNavOperateTVC.h */,
+				1283C25E2463A8A5002041CA /* ADNavOperateTVC.m */,
+			);
+			path = Operate;
+			sourceTree = "<group>";
+		};
+		1283C26D2463AA75002041CA /* StatusBar */ = {
+			isa = PBXGroup;
+			children = (
+				1283C294246414EA002041CA /* NavStatusBarViewController.h */,
+				1283C295246414EB002041CA /* NavStatusBarViewController.m */,
+				1283C293246414EA002041CA /* NavStatusBarViewController.xib */,
+				1283C28A2463AFE5002041CA /* ADStatusBarVC.h */,
+				1283C28B2463AFE5002041CA /* ADStatusBarVC.m */,
+				1283C28C2463AFE5002041CA /* ADStatusBarVC.xib */,
+			);
+			path = StatusBar;
+			sourceTree = "<group>";
+		};
+		1283C26E2463AA97002041CA /* SlideBack */ = {
+			isa = PBXGroup;
+			children = (
+				1283C2852463AF90002041CA /* ADSystemSlideBackVC.h */,
+				1283C2862463AF90002041CA /* ADSystemSlideBackVC.m */,
+				1283C2872463AF90002041CA /* ADSystemSlideBackVC.xib */,
+				1283C2802463AF52002041CA /* ADCustomSlideBackVC.h */,
+				1283C2812463AF52002041CA /* ADCustomSlideBackVC.m */,
+				1283C2822463AF52002041CA /* ADCustomSlideBackVC.xib */,
+				1283C27D2463AF14002041CA /* ADNavNestScrollViewVC.h */,
+				1283C27E2463AF14002041CA /* ADNavNestScrollViewVC.m */,
+			);
+			path = SlideBack;
+			sourceTree = "<group>";
+		};
+		1283C26F2463AC53002041CA /* Hidden */ = {
+			isa = PBXGroup;
+			children = (
+				1283C2662463A94D002041CA /* ADNavEmptyTVC.h */,
+				1283C2672463A94D002041CA /* ADNavEmptyTVC.m */,
+				1283C2692463A97D002041CA /* ADNavScrollHiddenTVC01.h */,
+				1283C26A2463A97D002041CA /* ADNavScrollHiddenTVC01.m */,
+				1283C2712463ADAB002041CA /* ADNavScrollHiddenTVC02.h */,
+				1283C2722463ADAB002041CA /* ADNavScrollHiddenTVC02.m */,
+				1283C2742463ADE4002041CA /* ADNavScrollAnimateHiddenTVC01.h */,
+				1283C2752463ADE4002041CA /* ADNavScrollAnimateHiddenTVC01.m */,
+				1283C2772463ADEF002041CA /* ADNavScrollAnimateHiddenTVC02.h */,
+				1283C2782463ADEF002041CA /* ADNavScrollAnimateHiddenTVC02.m */,
+			);
+			path = Hidden;
+			sourceTree = "<group>";
+		};
+		1283C2702463ACB5002041CA /* Alpha */ = {
+			isa = PBXGroup;
+			children = (
+				1283C2602463A8E6002041CA /* ADNavTransparentTVC.h */,
+				1283C2612463A8E6002041CA /* ADNavTransparentTVC.m */,
+				1283C2632463A91A002041CA /* ADNavAlphaChangeTVC.h */,
+				1283C2642463A91A002041CA /* ADNavAlphaChangeTVC.m */,
+			);
+			path = Alpha;
+			sourceTree = "<group>";
+		};
+		2F457D2654FA51FAFE84FB36 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EA449A62D39B163F21D9D779 /* Pods-EasyNavigationDemo.debug.xcconfig */,
+				32DD31874F5AD22EA109D910 /* Pods-EasyNavigationDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		890C4601A569AE4433480EC8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				99C44FA1DCA0B5F1985F0D66 /* Pods_EasyNavigationDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1283C23B24639E21002041CA /* EasyNavigationDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1283C25524639E25002041CA /* Build configuration list for PBXNativeTarget "EasyNavigationDemo" */;
+			buildPhases = (
+				B5074F706C4A25386A568E90 /* [CP] Check Pods Manifest.lock */,
+				1283C23824639E21002041CA /* Sources */,
+				1283C23924639E21002041CA /* Frameworks */,
+				1283C23A24639E21002041CA /* Resources */,
+				9D0CCF86B23695EDDFAAB3E0 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EasyNavigationDemo;
+			productName = EasyNavigationDemo;
+			productReference = 1283C23C24639E21002041CA /* EasyNavigationDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1283C23424639E21002041CA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = AD;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = jingshonline;
+				TargetAttributes = {
+					1283C23B24639E21002041CA = {
+						CreatedOnToolsVersion = 11.4;
+					};
+				};
+			};
+			buildConfigurationList = 1283C23724639E21002041CA /* Build configuration list for PBXProject "EasyNavigationDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1283C23324639E21002041CA;
+			productRefGroup = 1283C23D24639E21002041CA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1283C23B24639E21002041CA /* EasyNavigationDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1283C23A24639E21002041CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1283C24F24639E25002041CA /* LaunchScreen.storyboard in Resources */,
+				1283C24C24639E25002041CA /* Assets.xcassets in Resources */,
+				1283C24A24639E21002041CA /* Main.storyboard in Resources */,
+				1283C2842463AF52002041CA /* ADCustomSlideBackVC.xib in Resources */,
+				1283C2892463AF90002041CA /* ADSystemSlideBackVC.xib in Resources */,
+				1283C28E2463AFE5002041CA /* ADStatusBarVC.xib in Resources */,
+				1283C296246414EB002041CA /* NavStatusBarViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9D0CCF86B23695EDDFAAB3E0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EasyNavigationDemo/Pods-EasyNavigationDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EasyNavigationDemo/Pods-EasyNavigationDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EasyNavigationDemo/Pods-EasyNavigationDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5074F706C4A25386A568E90 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EasyNavigationDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1283C23824639E21002041CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1283C2682463A94D002041CA /* ADNavEmptyTVC.m in Sources */,
+				1283C24724639E21002041CA /* ViewController.m in Sources */,
+				1283C2832463AF52002041CA /* ADCustomSlideBackVC.m in Sources */,
+				1283C2652463A91A002041CA /* ADNavAlphaChangeTVC.m in Sources */,
+				1283C2732463ADAB002041CA /* ADNavScrollHiddenTVC02.m in Sources */,
+				1283C2882463AF90002041CA /* ADSystemSlideBackVC.m in Sources */,
+				1283C2762463ADE4002041CA /* ADNavScrollAnimateHiddenTVC01.m in Sources */,
+				1283C2792463ADEF002041CA /* ADNavScrollAnimateHiddenTVC02.m in Sources */,
+				1283C2622463A8E6002041CA /* ADNavTransparentTVC.m in Sources */,
+				1283C24124639E21002041CA /* AppDelegate.m in Sources */,
+				1283C297246414EB002041CA /* NavStatusBarViewController.m in Sources */,
+				1283C25224639E25002041CA /* main.m in Sources */,
+				1283C27F2463AF14002041CA /* ADNavNestScrollViewVC.m in Sources */,
+				1283C25A2463A7F7002041CA /* ADBaseTVC.m in Sources */,
+				1283C25F2463A8A5002041CA /* ADNavOperateTVC.m in Sources */,
+				1283C27C2463AECA002041CA /* ADBaseVC.m in Sources */,
+				1283C26B2463A97D002041CA /* ADNavScrollHiddenTVC01.m in Sources */,
+				1283C28D2463AFE5002041CA /* ADStatusBarVC.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1283C24824639E21002041CA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1283C24924639E21002041CA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1283C24D24639E25002041CA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1283C24E24639E25002041CA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1283C25324639E25002041CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1283C25424639E25002041CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1283C25624639E25002041CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA449A62D39B163F21D9D779 /* Pods-EasyNavigationDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 25ZE6TVB9T;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = EasyNavigationDemo/EasyNavPrefixHeader.pch;
+				INFOPLIST_FILE = EasyNavigationDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jingshonline.EasyNavigationDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1283C25724639E25002041CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32DD31874F5AD22EA109D910 /* Pods-EasyNavigationDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 25ZE6TVB9T;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = EasyNavigationDemo/EasyNavPrefixHeader.pch;
+				INFOPLIST_FILE = EasyNavigationDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jingshonline.EasyNavigationDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1283C23724639E21002041CA /* Build configuration list for PBXProject "EasyNavigationDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1283C25324639E25002041CA /* Debug */,
+				1283C25424639E25002041CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1283C25524639E25002041CA /* Build configuration list for PBXNativeTarget "EasyNavigationDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1283C25624639E25002041CA /* Debug */,
+				1283C25724639E25002041CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1283C23424639E21002041CA /* Project object */;
+}

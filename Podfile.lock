@@ -1,0 +1,16 @@
+PODS:
+  - EasyNavigation (1.0.5)
+
+DEPENDENCIES:
+  - EasyNavigation
+
+SPEC REPOS:
+  trunk:
+    - EasyNavigation
+
+SPEC CHECKSUMS:
+  EasyNavigation: 3414769a995d032e5dd9441f2bdd4eda7dd10089
+
+PODFILE CHECKSUM: 40995f90803007b9aea61e8f838ecbcc44aa8386
+
+COCOAPODS: 1.9.1
