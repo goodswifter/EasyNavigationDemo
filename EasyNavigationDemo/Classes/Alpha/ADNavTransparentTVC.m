@@ -21,18 +21,18 @@
     self.tableView.contentInset = UIEdgeInsetsMake(-StatusBarHeight_N(), 0, 0, 0);
     [self.navigationView setTitle:@"导航栏透明"];
     [self.navigationView setNavigationBackgroundAlpha:0];
-    self.navigationView.lineView.alpha = 1 ;
+    self.navigationView.lineView.alpha = 1;
 }
 
 #pragma mark - <UIScrollViewDelegate>
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
   
-    UIImage *btnImage = nil ;
+    UIImage *btnImage = nil;
     if (scrollView.contentOffset.y > 100) {
-        btnImage = [UIImage imageNamed:@"nav_btn_back_blue.png"] ;
+        btnImage = [UIImage imageNamed:@"nav_btn_back_blue.png"];
         self.navigationView.titleLabel.textColor = [UIColor cyanColor];
     } else{
-        btnImage = [UIImage imageNamed:@"nav_btn_back.png"] ;
+        btnImage = [UIImage imageNamed:@"nav_btn_back.png"];
         self.navigationView.titleLabel.textColor = [UIColor whiteColor];
     }
     

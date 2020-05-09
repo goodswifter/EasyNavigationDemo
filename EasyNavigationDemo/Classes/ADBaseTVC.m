@@ -43,11 +43,10 @@
         _tableView = tableView;
         [self.view addSubview:tableView];
         _tableView.contentInset = UIEdgeInsetsMake(NavigationHeight_N() - StatusBarHeight_N(), 0, 0, 0);
-        [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cellID"];
-        _tableView.dataSource = self ;
-        _tableView.delegate = self ;
+        _tableView.dataSource = self;
+        _tableView.delegate = self;
     }
-    return _tableView ;
+    return _tableView;
 }
 
 @end

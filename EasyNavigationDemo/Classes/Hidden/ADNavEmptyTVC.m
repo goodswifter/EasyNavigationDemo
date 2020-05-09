@@ -25,7 +25,7 @@
             self.tableView.contentInset = UIEdgeInsetsMake(-StatusBarHeight_N(), 0, 0, 0);
         }
     #else
-        self.navigationView.hidden = YES ;
+        self.navigationView.hidden = YES;
     #endif
 }
 

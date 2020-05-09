@@ -19,22 +19,22 @@
     [super viewDidLoad];
     
     [self.navigationView setTitle:@"自定义返回手势"];
-    self.textField.delegate = self ;
+    self.textField.delegate = self;
     
-    self.customBackGestureEnabel = YES ;
+    self.customBackGestureEnabel = YES;
     
-    __weak typeof(self) weakSelf = self ;
+    __weak typeof(self) weakSelf = self;
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        weakSelf.textField.text = @"100" ;
+        weakSelf.textField.text = @"100";
         [weakSelf.textField becomeFirstResponder];
     });
 }
 
 #pragma mark - <UITextFieldDelegate>
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
-    self.customBackGestureEdge = textField.text.floatValue ;
+    self.customBackGestureEdge = textField.text.floatValue;
     [textField resignFirstResponder];
-    return YES ;
+    return YES;
 }
 
 @end

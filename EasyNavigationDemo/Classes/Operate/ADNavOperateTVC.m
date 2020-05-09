@@ -65,7 +65,7 @@
         case 1: {
             if (self.navigationView.navigationBackButton) {
                 [self.navigationView.navigationBackButton removeFromSuperview];
-                self.navigationView.navigationBackButton = nil ;
+                self.navigationView.navigationBackButton = nil;
             }
             break;
         }
@@ -93,7 +93,7 @@
             break;
         }
         case 7: {
-            self.navigationView.hidden = NO ;
+            self.navigationView.hidden = NO;
             break;
         }
         default:

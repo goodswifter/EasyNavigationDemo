@@ -14,6 +14,16 @@
 
 @implementation ADNavVC
 
++ (void)initialize {
+    EasyNavigationOptions *options = [EasyNavigationOptions shareInstance];
+    options.titleColor = [UIColor blackColor];
+    options.buttonTitleFont = [UIFont systemFontOfSize:18];
+    options.navBackgroundImage = [UIImage imageNamed:@"nav_background_image"];
+    options.buttonTitleColor = [UIColor blackColor];
+    options.buttonTitleColorHieght = [UIColor orangeColor];
+    options.navigationBackButtonImage = [UIImage imageNamed:@"nav_btn_back"];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.

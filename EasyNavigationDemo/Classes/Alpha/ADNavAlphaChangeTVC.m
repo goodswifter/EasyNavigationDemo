@@ -8,7 +8,7 @@
 
 #import "ADNavAlphaChangeTVC.h"
 
-@interface ADNavAlphaChangeTVC ()
+@interface ADNavAlphaChangeTVC () <UIScrollViewDelegate>
 
 @end
 
@@ -19,13 +19,18 @@
     
     [self.navigationView setTitle:@"导航栏渐变"];
     
-    self.tableView.contentInset = UIEdgeInsetsMake(-StatusBarHeight_N(), 0, 0, 0);
+    self.tableView.contentInset = UIEdgeInsetsMake(-StatusBarHeight_N() + StatusBarHeight_N(), 0, 0, 0);
 
 #if 1 // 以下两个2选1
     [self.navigationView navigationAlphaSlowChangeWithScrollow:self.tableView];
 #else
     [self.navigationView navigationAlphaSlowChangeWithScrollow:self.tableView start:NAV_HEIGHT end:NAV_HEIGHT * 4];
 #endif
+}
+
+#pragma mark - <UIScrollViewDelegate>
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    NSLog(@"%lf", scrollView.contentOffset.y);
 }
 
 @end
