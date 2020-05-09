@@ -1,12 +1,13 @@
 //
 //  ADStatusBarVC.m
-//  EasyNavigationDemo
+//  ADEasyNavigationDemo
 //
-//  Created by zhongaidong on 2020/5/7.
+//  Created by zhongaidong on 2020/5/9.
 //  Copyright © 2020 jingshonline. All rights reserved.
 //
 
 #import "ADStatusBarVC.h"
+#import <EasyNavigation/EasyNavigation.h>
 
 @interface ADStatusBarVC ()
 
@@ -20,16 +21,17 @@
     [self.navigationView setTitle:@"statusBar状态改变"];
 }
 
-- (IBAction)statusBarSwitchClick:(UISwitch *)sender {
-//    self.statusBarHidden = !sender.isOn ;
+- (IBAction)statusBarHiddenAction {
+    self.statusBarHidden = !self.statusBarHidden;
+    self.navigationController.statusBarHidden = !self.navigationController.statusBarHidden;
 }
 
-- (IBAction)statusBarStyleSwitchClick:(UISwitch *)sender {
-    self.statusBarStyle = sender.isOn ? UIStatusBarStyleDefault : UIStatusBarStyleLightContent ;
+- (IBAction)statusBarLightStyleAction {
+    self.navigationController.statusBarStyle = UIStatusBarStyleLightContent;
 }
 
-- (BOOL)prefersStatusBarHidden {
-    return self.statusBarHidden;
+- (IBAction)statusBarDefaultStyleAction {
+    self.navigationController.statusBarStyle = UIStatusBarStyleDefault;
 }
 
 @end

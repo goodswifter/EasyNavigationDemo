@@ -28,15 +28,14 @@
 		1283C2842463AF52002041CA /* ADCustomSlideBackVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1283C2822463AF52002041CA /* ADCustomSlideBackVC.xib */; };
 		1283C2882463AF90002041CA /* ADSystemSlideBackVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1283C2862463AF90002041CA /* ADSystemSlideBackVC.m */; };
 		1283C2892463AF90002041CA /* ADSystemSlideBackVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1283C2872463AF90002041CA /* ADSystemSlideBackVC.xib */; };
-		1283C28D2463AFE5002041CA /* ADStatusBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1283C28B2463AFE5002041CA /* ADStatusBarVC.m */; };
-		1283C28E2463AFE5002041CA /* ADStatusBarVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1283C28C2463AFE5002041CA /* ADStatusBarVC.xib */; };
-		1283C296246414EB002041CA /* NavStatusBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1283C293246414EA002041CA /* NavStatusBarViewController.xib */; };
-		1283C297246414EB002041CA /* NavStatusBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1283C295246414EB002041CA /* NavStatusBarViewController.m */; };
+		1283C2F8246658F6002041CA /* ADStatusBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1283C2F5246658F5002041CA /* ADStatusBarVC.m */; };
+		1283C2F9246658F6002041CA /* ADStatusBarVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1283C2F7246658F6002041CA /* ADStatusBarVC.xib */; };
+		1283C2FC24665935002041CA /* ADNavVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1283C2FB24665935002041CA /* ADNavVC.m */; };
 		22124B127A0A0958EFABCA0F /* Pods_EasyNavigationDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99C44FA1DCA0B5F1985F0D66 /* Pods_EasyNavigationDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1283C23C24639E21002041CA /* EasyNavigationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyNavigationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1283C23C24639E21002041CA /* ADEasyNavigationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ADEasyNavigationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1283C23F24639E21002041CA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1283C24024639E21002041CA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		1283C24524639E21002041CA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -74,13 +73,12 @@
 		1283C2852463AF90002041CA /* ADSystemSlideBackVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADSystemSlideBackVC.h; sourceTree = "<group>"; };
 		1283C2862463AF90002041CA /* ADSystemSlideBackVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADSystemSlideBackVC.m; sourceTree = "<group>"; };
 		1283C2872463AF90002041CA /* ADSystemSlideBackVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ADSystemSlideBackVC.xib; sourceTree = "<group>"; };
-		1283C28A2463AFE5002041CA /* ADStatusBarVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADStatusBarVC.h; sourceTree = "<group>"; };
-		1283C28B2463AFE5002041CA /* ADStatusBarVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADStatusBarVC.m; sourceTree = "<group>"; };
-		1283C28C2463AFE5002041CA /* ADStatusBarVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ADStatusBarVC.xib; sourceTree = "<group>"; };
 		1283C28F2463E06A002041CA /* EasyNavPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EasyNavPrefixHeader.pch; sourceTree = "<group>"; };
-		1283C293246414EA002041CA /* NavStatusBarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NavStatusBarViewController.xib; sourceTree = "<group>"; };
-		1283C294246414EA002041CA /* NavStatusBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavStatusBarViewController.h; sourceTree = "<group>"; };
-		1283C295246414EB002041CA /* NavStatusBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavStatusBarViewController.m; sourceTree = "<group>"; };
+		1283C2F5246658F5002041CA /* ADStatusBarVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADStatusBarVC.m; sourceTree = "<group>"; };
+		1283C2F6246658F5002041CA /* ADStatusBarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADStatusBarVC.h; sourceTree = "<group>"; };
+		1283C2F7246658F6002041CA /* ADStatusBarVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ADStatusBarVC.xib; sourceTree = "<group>"; };
+		1283C2FA24665935002041CA /* ADNavVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADNavVC.h; sourceTree = "<group>"; };
+		1283C2FB24665935002041CA /* ADNavVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADNavVC.m; sourceTree = "<group>"; };
 		32DD31874F5AD22EA109D910 /* Pods-EasyNavigationDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyNavigationDemo.release.xcconfig"; path = "Target Support Files/Pods-EasyNavigationDemo/Pods-EasyNavigationDemo.release.xcconfig"; sourceTree = "<group>"; };
 		99C44FA1DCA0B5F1985F0D66 /* Pods_EasyNavigationDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyNavigationDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA449A62D39B163F21D9D779 /* Pods-EasyNavigationDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyNavigationDemo.debug.xcconfig"; path = "Target Support Files/Pods-EasyNavigationDemo/Pods-EasyNavigationDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -111,7 +109,7 @@
 		1283C23D24639E21002041CA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1283C23C24639E21002041CA /* EasyNavigationDemo.app */,
+				1283C23C24639E21002041CA /* ADEasyNavigationDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -146,6 +144,8 @@
 				1283C2592463A7F7002041CA /* ADBaseTVC.m */,
 				1283C27A2463AECA002041CA /* ADBaseVC.h */,
 				1283C27B2463AECA002041CA /* ADBaseVC.m */,
+				1283C2FA24665935002041CA /* ADNavVC.h */,
+				1283C2FB24665935002041CA /* ADNavVC.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -162,12 +162,9 @@
 		1283C26D2463AA75002041CA /* StatusBar */ = {
 			isa = PBXGroup;
 			children = (
-				1283C294246414EA002041CA /* NavStatusBarViewController.h */,
-				1283C295246414EB002041CA /* NavStatusBarViewController.m */,
-				1283C293246414EA002041CA /* NavStatusBarViewController.xib */,
-				1283C28A2463AFE5002041CA /* ADStatusBarVC.h */,
-				1283C28B2463AFE5002041CA /* ADStatusBarVC.m */,
-				1283C28C2463AFE5002041CA /* ADStatusBarVC.xib */,
+				1283C2F6246658F5002041CA /* ADStatusBarVC.h */,
+				1283C2F5246658F5002041CA /* ADStatusBarVC.m */,
+				1283C2F7246658F6002041CA /* ADStatusBarVC.xib */,
 			);
 			path = StatusBar;
 			sourceTree = "<group>";
@@ -235,9 +232,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1283C23B24639E21002041CA /* EasyNavigationDemo */ = {
+		1283C23B24639E21002041CA /* ADEasyNavigationDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1283C25524639E25002041CA /* Build configuration list for PBXNativeTarget "EasyNavigationDemo" */;
+			buildConfigurationList = 1283C25524639E25002041CA /* Build configuration list for PBXNativeTarget "ADEasyNavigationDemo" */;
 			buildPhases = (
 				B5074F706C4A25386A568E90 /* [CP] Check Pods Manifest.lock */,
 				1283C23824639E21002041CA /* Sources */,
@@ -249,9 +246,9 @@
 			);
 			dependencies = (
 			);
-			name = EasyNavigationDemo;
+			name = ADEasyNavigationDemo;
 			productName = EasyNavigationDemo;
-			productReference = 1283C23C24639E21002041CA /* EasyNavigationDemo.app */;
+			productReference = 1283C23C24639E21002041CA /* ADEasyNavigationDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -269,7 +266,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 1283C23724639E21002041CA /* Build configuration list for PBXProject "EasyNavigationDemo" */;
+			buildConfigurationList = 1283C23724639E21002041CA /* Build configuration list for PBXProject "ADEasyNavigationDemo" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -282,7 +279,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1283C23B24639E21002041CA /* EasyNavigationDemo */,
+				1283C23B24639E21002041CA /* ADEasyNavigationDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -297,8 +294,7 @@
 				1283C24A24639E21002041CA /* Main.storyboard in Resources */,
 				1283C2842463AF52002041CA /* ADCustomSlideBackVC.xib in Resources */,
 				1283C2892463AF90002041CA /* ADSystemSlideBackVC.xib in Resources */,
-				1283C28E2463AFE5002041CA /* ADStatusBarVC.xib in Resources */,
-				1283C296246414EB002041CA /* NavStatusBarViewController.xib in Resources */,
+				1283C2F9246658F6002041CA /* ADStatusBarVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,17 +354,17 @@
 				1283C2732463ADAB002041CA /* ADNavScrollHiddenTVC02.m in Sources */,
 				1283C2882463AF90002041CA /* ADSystemSlideBackVC.m in Sources */,
 				1283C2762463ADE4002041CA /* ADNavScrollAnimateHiddenTVC01.m in Sources */,
+				1283C2FC24665935002041CA /* ADNavVC.m in Sources */,
 				1283C2792463ADEF002041CA /* ADNavScrollAnimateHiddenTVC02.m in Sources */,
 				1283C2622463A8E6002041CA /* ADNavTransparentTVC.m in Sources */,
 				1283C24124639E21002041CA /* AppDelegate.m in Sources */,
-				1283C297246414EB002041CA /* NavStatusBarViewController.m in Sources */,
 				1283C25224639E25002041CA /* main.m in Sources */,
 				1283C27F2463AF14002041CA /* ADNavNestScrollViewVC.m in Sources */,
 				1283C25A2463A7F7002041CA /* ADBaseTVC.m in Sources */,
 				1283C25F2463A8A5002041CA /* ADNavOperateTVC.m in Sources */,
 				1283C27C2463AECA002041CA /* ADBaseVC.m in Sources */,
 				1283C26B2463A97D002041CA /* ADNavScrollHiddenTVC01.m in Sources */,
-				1283C28D2463AFE5002041CA /* ADStatusBarVC.m in Sources */,
+				1283C2F8246658F6002041CA /* ADStatusBarVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -547,7 +543,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1283C23724639E21002041CA /* Build configuration list for PBXProject "EasyNavigationDemo" */ = {
+		1283C23724639E21002041CA /* Build configuration list for PBXProject "ADEasyNavigationDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1283C25324639E25002041CA /* Debug */,
@@ -556,7 +552,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1283C25524639E25002041CA /* Build configuration list for PBXNativeTarget "EasyNavigationDemo" */ = {
+		1283C25524639E25002041CA /* Build configuration list for PBXNativeTarget "ADEasyNavigationDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1283C25624639E25002041CA /* Debug */,

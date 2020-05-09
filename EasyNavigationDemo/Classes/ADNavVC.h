@@ -1,16 +1,16 @@
 //
-//  ADStatusBarVC.h
+//  ADNavVC.h
 //  ADEasyNavigationDemo
 //
 //  Created by zhongaidong on 2020/5/9.
 //  Copyright © 2020 jingshonline. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <EasyNavigation/EasyNavigation.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ADStatusBarVC : UIViewController
+@interface ADNavVC : EasyNavigationController
 
 @end
 

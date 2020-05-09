@@ -2,16 +2,16 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lFu-PZ-UNR">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Easy Navigation Controller-->
+        <!--NavVC-->
         <scene sceneID="5ar-Rd-2vA">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="EBn-lG-pds" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lFu-PZ-UNR" customClass="EasyNavigationController" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lFu-PZ-UNR" customClass="ADNavVC" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Poy-rc-1B1">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -22,6 +22,7 @@
                         <segue destination="abQ-1N-z4b" kind="relationship" relationship="rootViewController" id="U4c-wL-bet"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EBn-lG-pds" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="135.9375"/>
         </scene>

@@ -29,7 +29,6 @@
 
 // StatusBar
 #import "ADStatusBarVC.h" // statusBar状态改变
-#import "NavStatusBarViewController.h"
 
 @interface ViewController () <UITableViewDataSource, UITableViewDelegate>
 /// 组名数据源
@@ -121,7 +120,7 @@
                         @[[ADSystemSlideBackVC class],
                           [ADCustomSlideBackVC class],
                           [ADNavNestScrollViewVC class]],
-                        @[[NavStatusBarViewController class]]];
+                        @[[ADStatusBarVC class]]];
     }
     return _navDataArr;
 }

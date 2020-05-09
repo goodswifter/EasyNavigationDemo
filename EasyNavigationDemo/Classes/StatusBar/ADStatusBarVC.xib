@@ -17,57 +17,54 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fNv-MP-a1o">
-                    <rect key="frame" x="10" y="348" width="394" height="200"/>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="Ghn-j6-Yzj">
+                    <rect key="frame" x="50" y="323" width="314" height="250"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="statusBar是否隐藏" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5w1-3A-OV7">
-                            <rect key="frame" x="60" y="47" width="143" height="21"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3cj-vM-GJW">
-                            <rect key="frame" x="220" y="42" width="51" height="31"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3MM-nD-YED">
+                            <rect key="frame" x="0.0" y="0.0" width="314" height="50"/>
+                            <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="nge-4n-gf5"/>
+                            </constraints>
+                            <state key="normal" title="状态栏的显示与隐藏"/>
                             <connections>
-                                <action selector="statusBarSwitchClick:" destination="-1" eventType="valueChanged" id="YUQ-l7-mxs"/>
+                                <action selector="statusBarHiddenAction" destination="-1" eventType="touchUpInside" id="mqY-T1-8EB"/>
                             </connections>
-                        </switch>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="statusBar改变样式" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dya-BF-k8P">
-                            <rect key="frame" x="60" y="103" width="157" height="21"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KDJ-QH-lkB">
-                            <rect key="frame" x="220" y="98" width="51" height="31"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h1a-SY-g4r">
+                            <rect key="frame" x="0.0" y="100" width="314" height="50"/>
+                            <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="ozN-75-21N"/>
+                            </constraints>
+                            <state key="normal" title="状态栏白色模式"/>
                             <connections>
-                                <action selector="statusBarStyleSwitchClick:" destination="-1" eventType="valueChanged" id="pLq-LK-ImY"/>
+                                <action selector="statusBarLightStyleAction" destination="-1" eventType="touchUpInside" id="dvo-Wd-4Yt"/>
                             </connections>
-                        </switch>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GhI-u2-cTQ">
+                            <rect key="frame" x="0.0" y="200" width="314" height="50"/>
+                            <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="dh0-rj-zZ8"/>
+                            </constraints>
+                            <state key="normal" title="状态栏黑色模式"/>
+                            <connections>
+                                <action selector="statusBarDefaultStyleAction" destination="-1" eventType="touchUpInside" id="a4E-bZ-0gm"/>
+                            </connections>
+                        </button>
                     </subviews>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                    <constraints>
-                        <constraint firstItem="dya-BF-k8P" firstAttribute="centerY" secondItem="KDJ-QH-lkB" secondAttribute="centerY" id="13K-pt-QAr"/>
-                        <constraint firstItem="KDJ-QH-lkB" firstAttribute="leading" secondItem="dya-BF-k8P" secondAttribute="trailing" constant="3" id="2rn-lH-6qp"/>
-                        <constraint firstAttribute="height" constant="200" id="Y2Z-uE-i7N"/>
-                        <constraint firstItem="3cj-vM-GJW" firstAttribute="leading" secondItem="KDJ-QH-lkB" secondAttribute="leading" id="fof-05-aXu"/>
-                        <constraint firstItem="KDJ-QH-lkB" firstAttribute="top" secondItem="3cj-vM-GJW" secondAttribute="bottom" constant="25" id="gl8-Db-4QK"/>
-                        <constraint firstItem="3cj-vM-GJW" firstAttribute="top" secondItem="fNv-MP-a1o" secondAttribute="top" constant="42" id="hsC-dM-luZ"/>
-                        <constraint firstItem="3cj-vM-GJW" firstAttribute="leading" secondItem="5w1-3A-OV7" secondAttribute="trailing" constant="17" id="joZ-HE-pvh"/>
-                        <constraint firstItem="5w1-3A-OV7" firstAttribute="centerY" secondItem="3cj-vM-GJW" secondAttribute="centerY" id="oK0-Sb-z2B"/>
-                        <constraint firstItem="5w1-3A-OV7" firstAttribute="leading" secondItem="dya-BF-k8P" secondAttribute="leading" id="qdo-MJ-6ly"/>
-                        <constraint firstItem="5w1-3A-OV7" firstAttribute="leading" secondItem="fNv-MP-a1o" secondAttribute="leading" constant="60" id="uQT-u2-5rP"/>
-                    </constraints>
-                </view>
+                    <color key="backgroundColor" red="0.25703642580000002" green="1" blue="0.45132483289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </stackView>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
-                <constraint firstItem="fNv-MP-a1o" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="9Yr-ru-9hi"/>
-                <constraint firstItem="fNv-MP-a1o" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="10" id="bRt-oB-xOQ"/>
-                <constraint firstItem="fNv-MP-a1o" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="nYb-8o-51V"/>
+                <constraint firstItem="Ghn-j6-Yzj" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="1OQ-xe-Sh5"/>
+                <constraint firstItem="Ghn-j6-Yzj" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="9n5-pP-HUQ"/>
+                <constraint firstItem="Ghn-j6-Yzj" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="50" id="fMJ-eu-4f2"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
-            <point key="canvasLocation" x="139" y="113"/>
+            <point key="canvasLocation" x="139" y="153"/>
         </view>
     </objects>
 </document>
